@@ -14,8 +14,9 @@ TEST_CASE("test")
 
 TEST_CASE(" decimal_to_hex "){
 
+	REQUIRE( decimal_to_hex (299) == "12B");
 	REQUIRE( decimal_to_hex (10) == "A");
 	REQUIRE( decimal_to_hex (170) == "AA");
 	REQUIRE( decimal_to_hex (255) == "FF");
-	REQUIRE( decimal_to_hex (299) == "B21");
+	
 }

@@ -2,6 +2,8 @@
 #include "question4.h"
 using std:: string;
 using std:: to_string;
+#include <algorithm>
+
 //using namespace std;
 
 //
@@ -75,9 +77,9 @@ string decimal_to_hex(int numbers){
     
     //string(result.begin(), result.end());
     string rev_result;
-    for(int digit = result.length() -1; digit > 0; digit--){
-        rev_result= rev_result + result;
+    for(int digit = result.length() -1 ; digit >= 0; digit--){
+        rev_result= rev_result + result[digit];
     }
-    
-    return result; 
+    //std::reverse(result.begin(), result.end());
+    return rev_result; 
 }
