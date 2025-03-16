@@ -10,3 +10,12 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+
+TEST_CASE(" decimal_to_hex "){
+
+	REQUIRE( decimal_to_hex (10) == "A");
+	REQUIRE( decimal_to_hex (170) == "AA");
+	REQUIRE( decimal_to_hex (255) == "FF");
+	REQUIRE( decimal_to_hex (299) == "B21");
+}
